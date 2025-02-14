@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -94,10 +95,10 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'notas_db',  # Nombre de tu base de datos
-        'USER': 'postgres',  # Usuario de PostgreSQL
-        'PASSWORD': 'password',  # Contraseña de PostgreSQL
-        'HOST': 'localhost',  # Host de la base de datos
+        'NAME': 'app_notas_db',  # Nombre de tu base de datos
+        'USER': 'app_notas_db_user',  # Usuario de PostgreSQL
+        'PASSWORD': 'gcandyXWK6jdZPDHQZkE2tuP8HnVZVhr',  # Contraseña de PostgreSQL
+        'HOST': 'dpg-cunqidlumphs73bpmci0-a.oregon-postgres.render.com',  # Host de la base de datos
         'PORT': '5432',  # Puerto de PostgreSQL
     }
 }
